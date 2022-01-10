@@ -22,22 +22,22 @@ cls
 
 echo Note: if you're using PNG, the digits at the end should be from 0001.png to 9999.png
 set /p inputType= is the input PNG or MP4? (type PNG/MP4): 
-if "%inputType%"=="PNG" (echo "Input will be PNG, press any key to continue.") else (echo "Input will be MP4, press any key to continue.")
+if "%inputType%"=="PNG" (echo "> PNG") else (echo "> MP4")
 pause >nul
 cls
 
 set /p inputName=input filename: 
-echo "> %inputName%"
+echo "> %inputName%.%inputType%"
 pause >nul
 cls
 
 set /p outputName=output filename (.GIF): 
-echo "> %inputName% --> %outputName%.GIF"
+echo "> %inputName%.%inputType% --> %outputName%.GIF"
 pause >nul
 cls
 
 set /p outputFramerate=framerate: 
-echo "> %inputName% --> %outputName%.GIF @ %outputFramerate% FPS"
+echo "> %inputName%.%inputType% --> %outputName%.GIF @ %outputFramerate% FPS"
 pause >nul
 cls
 
