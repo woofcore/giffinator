@@ -4,9 +4,6 @@ a simple batch program to quickly convert a mp4 or image sequence to a gif.
 
 important: you must have FFMpeg installed or the exe in the working directory for this to work. There is an executable included in the .zip, but be way that it definitely is not the latest version. 
 
-# Download:
-
-
 # Useage:
 The program should have instructions built in, but just in case:
 * Input the file type by typing either PNG or MP4.
